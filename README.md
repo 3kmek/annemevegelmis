@@ -1,2 +1,2 @@
 # annemevegelmis
-son olsun
+bu son olsun artik
