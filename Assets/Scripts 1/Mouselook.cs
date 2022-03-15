@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Mouselook : MonoBehaviour
-{
+{/*
     [Range(50, 500)]
     public float sens;
     private float xRot = 0f;
@@ -24,5 +24,5 @@ public class Mouselook : MonoBehaviour
         //Cursor Management
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.lockState = CursorLockMode.Locked;
-    }
+    }*/
 }
