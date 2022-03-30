@@ -8,7 +8,6 @@ public class WorldInteraction : MonoBehaviour
     RaycastHit hit;
     Ray ray;
     Vector3 rayOrigin = new Vector3(0.5f, 0.5f, 0f); // center of the screen
-    float rayLength = 500f;
 
     void Start()
     {
@@ -19,7 +18,6 @@ public class WorldInteraction : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && !UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject())
         {
             ray = Camera.main.ViewportPointToRay(rayOrigin);
-            Debug.DrawRay(ray.origin, ray.direction * rayLength, Color.red);
             GetInteraction();
         }
     }
@@ -28,7 +26,6 @@ public class WorldInteraction : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, Mathf.Infinity))
         {
-            Debug.Log("çalýþtý mý lan");
             GameObject interactedObject = hit.collider.gameObject;
             if (interactedObject.tag == "Interactable Object")
             {

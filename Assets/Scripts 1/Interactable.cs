@@ -6,6 +6,5 @@ public class Interactable : MonoBehaviour, IInteractableInterface
 {
     public void Interract()
     {
-        Debug.Log("çalýþtý birader");
     }
 }
